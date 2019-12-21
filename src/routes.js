@@ -1,11 +1,11 @@
 import { Router } from 'express'
 
-import ProfessorController from './app/controllers/ProfessorController'
+import TeacherController from './app/controllers/TeacherController'
 import corsMiddleware from './app/middlewares/cors'
 
 const routes = new Router()
 
 routes.use(corsMiddleware)
-routes.get('/professors', ProfessorController.index)
+routes.get('/teachers', TeacherController.index)
 
 export default routes
