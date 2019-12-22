@@ -1,0 +1,15 @@
+version: "3.7"
+services:
+  node:
+    build: .
+    container_name: colmeia_node
+    ports:
+      - target: ${FRONTEND_PORT}
+        published: 80
+      - target: ${BACKEND_PORT}
+        published: 3333
+    volumes:
+      - .:/home/app
+      - type: bind
+        source: ${FRONTEND_BUILD}
+        target: /home/static
