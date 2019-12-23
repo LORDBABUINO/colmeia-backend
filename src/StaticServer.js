@@ -12,8 +12,7 @@ class StaticServer {
 
   middlewares() {
     this.server.use(
-      // express.static(path.resolve(__dirname, process.env.FRONTEND_BUILD))
-      express.static(path.resolve(__dirname, '/home/static'))
+      express.static(path.resolve(__dirname, process.env.FRONTEND_BUILD))
     )
   }
 
