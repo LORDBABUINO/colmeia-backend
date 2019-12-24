@@ -1,7 +1,6 @@
 # Colmeia Backend
 
 This is a simple API for [Colmeia Frontend](https://github.com/LORDBABUINO/colmeia-frontend) SPA.
-It has only the route `/teachers` and can search by name.
 
 ## Requirements
 
@@ -36,3 +35,5 @@ Inside `.env` file, set the values of `APP_ID`, `JAVASCRIPT_KEY` and `DB_URL` to
 
 You can run it by running `yarn start` inside it's folder.
 The default port is `3333` but you change it changing the `PORT` variable in `.env` file.
+
+The route of this API is a GET route named `/teachers`. It can receive a string on parameter `name` to search for instances of entity `professors` that match attribute `nome` with parameter received.
