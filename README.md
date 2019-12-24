@@ -37,3 +37,9 @@ You can run it by running `yarn start` inside it's folder.
 The default port is `3333` but you change it changing the `PORT` variable in `.env` file.
 
 The only route of this API is a GET route named `/teachers`. It can receive a string on parameter `name` to search for instances of entity `professors` that match attribute `nome` with parameter received.
+
+## Test
+
+```bash
+$ yarn test
+```
