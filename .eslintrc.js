@@ -2,12 +2,14 @@ module.exports = {
   env: {
     es6: true,
     node: true,
+    mocha: true,
   },
   extends: [
     'airbnb-base',
     'prettier',
+    'plugin:mocha/recommended'
   ],
-	plugins: ['prettier'],
+  plugins: ['prettier', 'mocha'],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
