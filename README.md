@@ -29,7 +29,7 @@ In order to run the API, you must have a [parse](https://docs.parseplatform.org/
 | bairro               | String |
 
 Then duplicate the file `.env.example` and rename it to `.env`.
-Inside `.env` file, set the values of `APP_ID`, `JAVASCRIPT_KEY` and `DB_URL` to the app id, javascript key and url of your parse database respectively. If you are using [back4app](https://www.back4app.com), your parse url should be  https://parseapi.back4app.com.
+Inside `.env` file, set the values of `FRONTEND_URL`, `APP_ID`, `JAVASCRIPT_KEY` and `DB_URL` to the frontend url, app id, javascript key and url of your parse database respectively. If you are using [back4app](https://www.back4app.com), your parse url should be  https://parseapi.back4app.com.
 
 ## Usage
 
