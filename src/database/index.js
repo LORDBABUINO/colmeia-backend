@@ -7,8 +7,10 @@ class Database {
   }
 
   async init() {
-    Parse.serverURL = process.env.DB_URL
-    Parse.initialize(process.env.APP_ID, process.env.JAVASCRIPT_KEY)
+    if (!process.env.NODE_ENV) {
+      Parse.serverURL = process.env.DB_URL
+      Parse.initialize(process.env.APP_ID, process.env.JAVASCRIPT_KEY)
+    }
   }
 }
 
